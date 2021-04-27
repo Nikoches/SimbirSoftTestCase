@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-28T00:07:08 MSK" name="Surefire suite" finished-at="2021-04-28T00:07:27 MSK" duration-ms="19074">
+    <groups>
+    </groups>
+    <test started-at="2021-04-28T00:07:08 MSK" name="Surefire test" finished-at="2021-04-28T00:07:27 MSK" duration-ms="19074">
+      <class name="ru.kocheshkov.tests.FirstTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ru.kocheshkov.tests.FirstTest@430fa4ef]" started-at="2021-04-28T00:07:08 MSK" name="setUp" finished-at="2021-04-28T00:07:08 MSK" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="simpleTest()[pri:0, instance:ru.kocheshkov.tests.FirstTest@430fa4ef]" started-at="2021-04-28T00:07:08 MSK" name="simpleTest" finished-at="2021-04-28T00:07:27 MSK" duration-ms="18796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+        <test-method is-config="true" signature="killServer()[pri:0, instance:ru.kocheshkov.tests.FirstTest@430fa4ef]" started-at="2021-04-28T00:07:27 MSK" name="killServer" finished-at="2021-04-28T00:07:27 MSK" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killServer -->
+      </class> <!-- ru.kocheshkov.tests.FirstTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

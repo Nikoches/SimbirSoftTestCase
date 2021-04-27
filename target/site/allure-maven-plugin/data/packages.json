@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "ru.kocheshkov.tests.FirstTest",
+    "children" : [ {
+      "name" : "simpleTest",
+      "uid" : "3e7256500b80ef3d",
+      "parentUid" : "20f9c0c8476098113e8e592250a64747",
+      "status" : "passed",
+      "time" : {
+        "start" : 1619557628316,
+        "stop" : 1619557647048,
+        "duration" : 18732
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ru.kocheshkov.tests.FirstTest"
+  } ]
+}

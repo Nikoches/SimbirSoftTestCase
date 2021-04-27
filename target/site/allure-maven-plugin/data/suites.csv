@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Apr 28 00:07:08 MSK 2021","Wed Apr 28 00:07:27 MSK 2021","18732","Surefire suite","Surefire test","ru.kocheshkov.tests.FirstTest","ru.kocheshkov.tests.FirstTest","simpleTest","simpleTest",""

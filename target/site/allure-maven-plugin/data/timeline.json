@@ -1,0 +1,26 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Ivan_Mechnikov",
+    "children" : [ {
+      "name" : "2840@Ivan_Mechnikov.main(1)",
+      "children" : [ {
+        "name" : "simpleTest",
+        "uid" : "3e7256500b80ef3d",
+        "parentUid" : "511dfa48507f0ff3bf331a0c36055f4e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619557628316,
+          "stop" : 1619557647048,
+          "duration" : 18732
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "511dfa48507f0ff3bf331a0c36055f4e"
+    } ],
+    "uid" : "66fb99ca163f73234496d9637f075254"
+  } ]
+}
