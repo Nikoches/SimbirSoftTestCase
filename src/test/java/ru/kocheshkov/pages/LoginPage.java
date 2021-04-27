@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+
 public class LoginPage {
     private final WebDriver driver;
 
@@ -16,7 +17,7 @@ public class LoginPage {
     private WebElement passwordInputButton;
     @FindBy(id = "passp-field-login")
     private WebElement loginInput;
-    @FindBy(xpath = "//a[@class=\"home-link desk-notif-card__domik-mail-line home-link_black_yes\"]")
+    @FindBy(xpath = "//div[text() = 'Почта']/..")
     private WebElement mailButton;
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -37,6 +38,6 @@ public class LoginPage {
         this.passwordInputButton.click();
     }
     public void ClickMailButton(){
-        this.mailButton.click();
+        mailButton.click();
     }
 }

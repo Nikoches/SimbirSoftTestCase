@@ -1,9 +1,6 @@
 package ru.kocheshkov.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -18,6 +15,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 
 public class FirstTest {
@@ -40,9 +38,11 @@ public class FirstTest {
     public void simpleTest() {
         String messageBody;
         FirefoxOptions firefoxOptions = new FirefoxOptions();
+        firefoxOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
         WebDriver driver = null;
         try {
             driver = new RemoteWebDriver(new URL(properties.getProperty("server_url")), firefoxOptions);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
         } catch (MalformedURLException e) {
             driver.quit();
             killServer();

@@ -1,0 +1,53 @@
+{
+  "uid" : "780486718ae7fa36",
+  "name" : "simpleTest",
+  "historyId" : "ru.kocheshkov.tests.FirstTest:ru.kocheshkov.tests.FirstTest#simpleTest",
+  "time" : {
+    "duration" : 14889
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "81652b09a1a8e32c",
+      "name" : "System out",
+      "source" : "81652b09a1a8e32c.txt",
+      "type" : "text/plain",
+      "size" : 278
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "ru.kocheshkov.tests.FirstTest"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.kocheshkov.tests.FirstTest"
+  }, {
+    "name" : "package",
+    "value" : "ru.kocheshkov.tests.FirstTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "780486718ae7fa36.json",
+  "parameterValues" : [ ]
+}

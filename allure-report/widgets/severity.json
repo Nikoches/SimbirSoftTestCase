@@ -1,0 +1,9 @@
+[ {
+  "uid" : "780486718ae7fa36",
+  "name" : "simpleTest",
+  "time" : {
+    "duration" : 14889
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
