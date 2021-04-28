@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.nio.charset.StandardCharsets;
+
 public class MailboxPage {
     private final WebDriver driver;
     @FindBy(xpath = "//div[contains(@placeholder,\"Напишите что-нибудь\")]")
@@ -28,21 +30,25 @@ public class MailboxPage {
         this.driver = driver;
     }
 
-    public String getMailCounter(String subject) {
-        searchInput.sendKeys("тема:" + subject);
+    public String getMailCounter(String searchQuery) {
+        searchInput.sendKeys("folder:входящие subject:Simbirsoft Testcase.Kocheshkov");
         searchInput.sendKeys(Keys.RETURN);
         return mailCounter.getText();
     }
 
-    public void ClickWriteMessageButton() {
+    public void clickWriteMessageButton() {
         writeMessageButton.click();
     }
 
-    public void setEmailParams(String... emailParams)  {
+    public void setEmailParams(String... emailParams) {
         emailAddressField.sendKeys(emailParams[0]);
         messageBody.clear();
         messageBody.sendKeys(emailParams[1]);
         subjectField.sendKeys(emailParams[2]);
+
+    }
+
+    public void clickSendButton() {
         sendButton.click();
     }
 }

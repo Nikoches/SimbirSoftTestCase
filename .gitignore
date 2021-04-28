@@ -1,1 +1,5 @@
 # Project exclude paths
+.idea
+.allure
+.iml
+target

@@ -19,6 +19,7 @@ public class LoginPage {
     private WebElement loginInput;
     @FindBy(xpath = "//div[text() = 'Почта']/..")
     private WebElement mailButton;
+
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -37,7 +38,8 @@ public class LoginPage {
         this.passwordInput.sendKeys(passwordInput);
         this.passwordInputButton.click();
     }
-    public void ClickMailButton(){
+
+    public void clickMailButton() {
         mailButton.click();
     }
 }
