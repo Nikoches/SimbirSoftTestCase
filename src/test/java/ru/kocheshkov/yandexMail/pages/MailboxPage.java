@@ -1,12 +1,10 @@
-package ru.kocheshkov.pages;
+package ru.kocheshkov.yandexMail.pages;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.nio.charset.StandardCharsets;
 
 public class MailboxPage {
     private final WebDriver driver;

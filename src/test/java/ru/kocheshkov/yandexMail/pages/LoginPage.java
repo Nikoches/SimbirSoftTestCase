@@ -1,4 +1,4 @@
-package ru.kocheshkov.pages;
+package ru.kocheshkov.yandexMail.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

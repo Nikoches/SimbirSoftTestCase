@@ -1,15 +1,12 @@
-package ru.kocheshkov.tests;
+package ru.kocheshkov.yandexMail.tests;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.*;
-import ru.kocheshkov.pages.LoginPage;
-import ru.kocheshkov.pages.MailboxPage;
 
+import ru.kocheshkov.yandexMail.pages.*;
 import java.io.IOException;
-import java.io.StringReader;
-import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -17,7 +14,6 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Properties;
-
 
 public class FirstTest {
     private final Properties properties = new Properties();
@@ -48,8 +44,7 @@ public class FirstTest {
     }
 
     @Test
-    public void simpleTest() throws UnsupportedEncodingException {
-        String messageBody;
+    public void simpleTest()  {
         webDriver.get((properties.getProperty("target.url")));
         //Creating loggingPage and authorization
         LoginPage loginPage = new LoginPage(webDriver);
@@ -71,7 +66,7 @@ public class FirstTest {
             get message counter
          */
         MailboxPage mailboxPage = new MailboxPage(webDriver);
-        messageBody = mailboxPage.getMailCounter(searchQ);
+        String messageBody = mailboxPage.getMailCounter(searchQ);
         mailboxPage.clickWriteMessageButton();
         /*
             Send email params, then send email message.
